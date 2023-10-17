@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Run" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_21_extent_report._2_LoginTestWithExtentReport"></class>
+            <class name="com.eurotech.tests.day_21_extent_report._3_AddEducationTestWithExtentReport"></class>
+        </classes>
+
+    </test>
+</suite>

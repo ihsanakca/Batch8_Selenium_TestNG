@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Run" verbose="1">
+    <test name="EuroTech Tests">
+        <packages>
+            <package name="com.eurotech.tests.*"></package>
+        </packages>
+
+    </test>
+</suite>

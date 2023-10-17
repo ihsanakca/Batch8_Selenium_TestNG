@@ -1,0 +1,108 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<!-- How to run specific package
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <packages>
+           <package name="com.eurotech.tests.day_12_Alert"></package>
+
+        </packages>
+    </test>
+</suite>
+-->
+
+
+
+<!-- How to run more than one package
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <packages>
+            <package name="com.eurotech.tests.day_17_webTables"></package>
+            <package name="com.eurotech.tests.day_12_alertAndMultipleWindowReview"></package>
+
+        </packages>
+    </test>
+</suite>
+-->
+
+
+<!-- How to run specific class
+
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_13_Iframe_Review._1_Iframes"></class>
+        </classes>
+    </test>
+</suite>
+
+-->
+
+<!-- How to run different classes together
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_13_Iframe_Review._1_Iframes"></class>
+            <class name="com.eurotech.tests.day_12_alertAndMultipleWindowReview._3_MultipleWindows"></class>
+        </classes>
+    </test>
+</suite>
+-->
+
+
+
+<!-- How to run different methods together  include: içermek
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_12_alertAndMultipleWindowReview._2_JS_Alerts">
+               <methods>
+                   <include name="jsAlert_Task"></include>
+                   <include name="jsAlert_Dismiss"></include>
+               </methods>
+
+            </class>
+
+        </classes>
+    </test>
+</suite>
+-->
+
+        <!-- How to run different test that are in the different classes together
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_12_alertAndMultipleWindowReview._2_JS_Alerts">
+                <methods>
+                    <include name="jsAlert_Task"></include>
+                    <include name="jsAlert_Dismiss"></include>
+                </methods>
+
+            </class>
+            <class name="com.eurotech.tests.day_17_webTables._2_WebTables_Task">
+                <methods>
+                    <include name="getASingleCellInOneRow_Task1"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
+
+-->
+
+
+<!-- How to run methods that are same class with exclude tag (hariç)-->
+<suite name="EuroTech Automation" verbose="1">
+    <test name="EuroTech Tests">
+        <classes>
+            <class name="com.eurotech.tests.day_17_WebTables._1_WebTables">
+                <methods>
+                    <exclude name="dataOfRow"></exclude>
+                </methods>
+            </class>
+          
+        </classes>
+    </test>
+</suite>
